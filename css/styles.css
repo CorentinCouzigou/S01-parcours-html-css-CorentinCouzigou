@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap'); 
+body {
+    background:#eee;
+    font-family: 'Asap', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-left:250px;
+    background:#fff;
+    box-shadow:0 0 5px rgba(0,0,0,.1);
+}
+
+.header {
+    float: left;
+    margin-left: -250px;
+    width: 250px;
+    background: #f5f5f5;
+    border-right: 1px solid rgba(0,0,0,.1);
+    position: fixed;
+    height: 100vh;
+}
+
+.search {
+    padding: 1rem;
+    background: #f39c12;
+}
+
+.search-input {
+    padding: .75rem 1rem;
+    border: none;
+    font-size:1.2em;
+    width:100%;
+    border-radius:2rem;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom:3px solid #f39c12;
+    padding-bottom:1rem;
+}
+
+.nav {
+    padding: 2rem;
+}
+header nav h2 {
+    color:black;
+    text-align: left;
+    font-weight: bold;
+}
+
+.nav-links {
+    margin-top: 2rem;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    background-color: lightgray;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    padding: 0.8rem;
+    margin:0.3rem auto;
+
+}
+.nav-item:hover{
+    background-color: orange;
+    transition: all 0.3s ease-in-out;
+}
+header nav li:first-child {
+    border-bottom: 0.2rem solid orange;
+}
+
+.page {
+    padding: 5rem 2rem 2rem;
+   
+}
+
+.content-focus {
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-titles {
+    width: 50%;
+    font-size: 3em;
+    margin-right: 2rem;
+    
+}
+
+.content-title {
+    max-width: 450px;
+    margin-left: auto;
+}
+h1 {
+    font-weight: bold;
+    border-top: 0.2rem solid orange;
+    padding:  2rem 0rem;
+    text-align: end;
+}
+h2  {
+    color:lightgray;
+    text-align:end;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.content-picture {
+    width: 50%;
+    position: relative;
+}
+figcaption {
+    position: relative;
+    top:-2.6rem;
+    background-color: rgba(0, 0, 0, 0.631);
+    padding: 0.8rem;
+    color: white;
+}
+
+.rounded {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.picture {
+    width: 100%;
+    display: block;
+}
+
+.content-quote {
+    border-top: 3px solid #ccc;
+    margin-top: 2rem;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.content h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content ol {
+    list-style-type: decimal;
+    font-size: 1.1em;
+    margin-left: 1.5em;
+    line-height: 1.5;
+}
+
+.articles {
+    margin-top: 5rem;
+}
+
+.articles-container {
+    margin-top: 2rem;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.articles header h2 {
+    color: black;
+    text-align: left;
+    font-weight: bold;
+
+}
+.card {
+    margin:1rem 1rem;
+    width:45%;
+}
+
+.card-title {
+    margin: 2rem 1rem;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 0 1rem;
+}
+
+.card-content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.card-footer {
+    margin: 2.5rem 1rem;
+    padding-top: 0.5rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.2em;
+}
+
+.footer {
+    background: #111;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #aaa;
+}
+.btn{
+    border:0.2rem solid #f39c12;
+    border-radius: 2rem;
+    padding:1rem 1.5rem;
+    color: #f39c12;
+    margin:0rem 0.5rem;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #f39c12;
+    color:white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*
+    Styles pour les écrans de moins de 1200px de large :
+*/
+
+@media screen and (max-width:1200px) {
+    .content-focus {
+        display:block;
+    }
+
+    .content-titles {
+        width: auto;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .content-title {
+        max-width: none;
+    }
+
+    .content-picture {
+        width: auto;
+    }
+
+    .articles-container {
+      
+        display:block;
+    }
+    .card {
+        width:auto;
+    }
+}
+
+
+/*
+    Styles pour les écrans de moins de 900px de large :
+*/
+@media screen and (max-width:900px) {
+    .header {
+        position:static;
+        width:auto;
+        float:none;
+        margin-left:0;
+        height: 40vh;
+    }
+
+    .container {
+        width:96%;
+        padding-left:0;
+    }
+
+    .page {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        padding: 1rem;
+    }
+
+    .nav .title {
+        display:none;
+    }
+
+    .nav-links {
+        margin-top:0;
+    }
+
+    .nav-item {
+        width:calc(33.3333% - .5rem);
+        text-align: center;
+    }
+
+    .nav-item-link {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:600px) {
+
+    .nav-item    {
+display: inline-block;
+    }
+.header {
+    height: 25vh;
+    }
+}
